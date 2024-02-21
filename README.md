@@ -63,6 +63,8 @@ If you do not specify how many days you would like to receive the information, y
 
 |Days|Meaning|
 |:--:|:-----:|
+| |today + the next 5 days|
+|None|today + the next 5 days|
 |0|today + the next 5 days|
 |1|today|
 |2|today + tomorrow|
