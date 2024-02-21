@@ -11,12 +11,14 @@ Python 2.7:
 
 ```
 python -m pip install requests
+python -m pip install xmltodict
 ```
 
 Python 3:
 
 ```
-python -m pip install requests
+python3 -m pip install requests
+python3 -m pip install xmltodict
 ```
 
 ## Explanation XML interface
