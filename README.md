@@ -3,6 +3,22 @@ A simple python code accessing the XML interface of the menu plan from SWFR (Stu
 
 More informations you can find [here](https://www.swfr.de/essen/mensen-cafes-speiseplaene/speiseplan-xml-schnittstelle).
 
+## Pre-Installation
+
+The code is written in such a way that it can be used in both Python 2.7 and Python 3.x. The following must be installed via pip before use.
+
+Python 2.7:
+
+```
+python -m pip install requests
+```
+
+Python 3:
+
+```
+python -m pip install requests
+```
+
 ## Explanation XML interface
 
 ### API-Key
