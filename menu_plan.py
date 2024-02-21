@@ -1,9 +1,11 @@
 import requests
 
-def get_menu_plan(api_key, location_id=None, days=None):
+def get_menu_plan(api_key, location_id=None, days=None, en=False):
     type=98
 
     base_url = "https://www.swfr.de/apispeiseplan?&type={}&tx_speiseplan_pi1[apiKey]={}".format(type, api_key)
+    if en:
+        base_url = "https://www.swfr.de/en/apispeiseplan?&type={}&tx_speiseplan_pi1[apiKey]={}".format(type, api_key)
 
     if location_id is not None:
         base_url += "&tx_speiseplan_pi1[ort]={}".format(location_id)
