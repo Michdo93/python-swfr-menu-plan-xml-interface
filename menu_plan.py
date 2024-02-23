@@ -229,18 +229,6 @@ class MenuPlan(object):
             if location.find('mensa').text == str(location_name):
                 return self.__convert_to_dict(location)
         return None
-    """
-    def get_menu_plan_from_xml_by_day(self, day=1):
-        today = datetime.now()
-
-        if day <= 1:
-            search_date = today
-        else:
-            if day in range(2,8):
-                search_date = today + timedelta(days=day-1)
-            else:
-                search_date = today + timedelta(days=6)
-    """
 
     def get_menu_from_menu_plan(self, location=None, menu_type="Essen 1", schedule_date=datetime.now().strftime("%d.%m.%Y")):
         if isinstance(location, int):
