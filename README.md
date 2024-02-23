@@ -148,6 +148,8 @@ menu_plan_instance = MenuPlan(api_key, location_id=None, days=None, i18n=False)
 
 #### Methods
 
+> :warning: **The functions were documented ki-generated.**: Because I was too lazy to write detailed documentation for such a simple programme, I had an AI do it for me. I cannot guarantee for possible errors!
+
 ##### `set_location_id(location_id=None)`
 
 Sets the location ID for the dining hall to be retrieved.
@@ -303,6 +305,8 @@ There are many more methods in the `MenuPlan` class that retrieve information ab
 
 
 #### Additional Methods (Continued)
+
+> :warning: **The functions were documented ki-generated.**: Because I was too lazy to write detailed documentation for such a simple programme, I had an AI do it for me. I cannot guarantee for possible errors!
 
 ##### `get_menu_types()`
 
