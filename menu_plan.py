@@ -182,9 +182,14 @@ class MenuPlan(object):
     
     def get_menu_plan_from_xml_interface(self, location_id=None, days=None, i18n=False):
         # Resetting for multiple use
-        self.set_location_id(location_id)
-        self.set_days(days)
-        self.set_i18n(i18n)
+        if location_id is not None:
+            self.set_location_id(location_id)
+        
+        if days is not None:
+            self.set_days(days)
+
+        if i18n is not None:
+            self.set_i18n(i18n)
 
         self.set_baseurl()
 
