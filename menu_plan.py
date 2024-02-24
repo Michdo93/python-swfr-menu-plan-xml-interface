@@ -339,17 +339,29 @@ class MenuPlan(object):
     def get_guest_menu_price_from_menu(self, menu):
         return self.get_menu_price_from_menu_by_customer_type(menu, "gaeste")
     
-    def text_to_dict(self, additives_text):
-        additives_list = additives_text.split(', ')
-        additives_dict = {}
+    def text_to_dict(self, text):
+        if text is not None:
+            text = text.replace(" ", "")
+            list = text.split(',')
+            dict = {}
 
-        for item in additives_list:
-            parts = item.split(': ')
-            if len(parts) == 2:
-                key, value = parts
-                additives_dict[key] = value
+            for item in list:
+                parts = item.split(':')
+                if len(parts) == 2:
+                    key, value = parts
+                    dict[key] = value
 
-        return additives_dict
+            return dict
+        else:
+            return None
+        
+    def extract_keys_as_string(self, dictionary):
+        if dictionary is None:
+            return None
+
+        keys = list(dictionary.keys())
+        result = ', '.join(keys)
+        return result
 
     def get_additives_from_menu(self, menu):
         if isinstance(menu, dict):
