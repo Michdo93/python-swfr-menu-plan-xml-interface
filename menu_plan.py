@@ -362,6 +362,14 @@ class MenuPlan(object):
         keys = list(dictionary.keys())
         result = ', '.join(keys)
         return result
+    
+    def extract_values_as_string(self, dictionary):
+        if dictionary is None:
+            return None
+
+        values = list(dictionary.values())
+        result = ', '.join(values)
+        return result
 
     def get_additives_from_menu(self, menu):
         if isinstance(menu, dict):
