@@ -723,18 +723,18 @@ Retrieves the price of a specific menu for guests.
 ###### Description
 This method retrieves the price of a specific menu for guests.
 
-##### `additives_text_to_dict(additives_text)`
+##### `text_to_dict(text)`
 
-Converts additives text to a dictionary.
+Converts text (str) to a dictionary.
 
 ###### Parameters
-- `additives_text`: Text containing additives information.
+- `text`: Text containing e.g. additives or allergens information.
 
 ###### Returns
-- `additives_dict`: A dictionary containing additives information.
+- `dict`: A dictionary containing e.g. additives or allergens information.
 
 ###### Description
-This method converts additives text to a dictionary.
+This method converts text to a dictionary.
 
 ##### `get_additives_from_menu(menu)`
 
