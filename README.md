@@ -728,13 +728,39 @@ This method retrieves the price of a specific menu for guests.
 Converts text (str) to a dictionary.
 
 ###### Parameters
-- `text`: Text containing e.g. additives or allergens information.
+- `text` (str): Text containing e.g. additives or allergens information.
 
 ###### Returns
 - `dict`: A dictionary containing e.g. additives or allergens information.
 
 ###### Description
-This method converts text to a dictionary.
+This method converts text to a dictionary by removing spaces, splitting the text into key-value pairs, and creating a dictionary from them.
+
+##### `extract_keys_as_string(dictionary)`
+
+Extracts keys from a dictionary and returns them as a comma-separated string.
+
+###### Parameters
+- `dictionary` (dict): The input dictionary.
+
+###### Returns
+- `str`: A string containing keys separated by commas.
+
+###### Description
+This method takes a dictionary as input and extracts its keys, returning them as a comma-separated string.
+
+##### `extract_values_as_string(dictionary)`
+
+Extracts values from a dictionary and returns them as a comma-separated string.
+
+###### Parameters
+- `dictionary` (dict): The input dictionary.
+
+###### Returns
+- `str`: A string containing values separated by commas.
+
+###### Description
+This method takes a dictionary as input and extracts its values, returning them as a comma-separated string.
 
 ##### `get_additives_from_menu(menu)`
 
