@@ -148,7 +148,6 @@ class MenuPlan(object):
                 return
         raise Exception("Name {} for canteen does not exist".format(location_name))
 
-
     def set_days(self, days=None):
         if days is None:
             self.days = None
@@ -340,7 +339,7 @@ class MenuPlan(object):
     def get_guest_menu_price_from_menu(self, menu):
         return self.get_menu_price_from_menu_by_customer_type(menu, "gaeste")
     
-    def additives_text_to_dict(self, additives_text):
+    def text_to_dict(self, additives_text):
         additives_list = additives_text.split(', ')
         additives_dict = {}
 
@@ -360,7 +359,7 @@ class MenuPlan(object):
         additives_text = additives_element.text if additives_element is not None else None
 
         if additives_text:
-            additives_dict = self.additives_text_to_dict(additives_text)
+            additives_dict = self.text_to_dict(additives_text)
             return additives_dict
 
         return None
